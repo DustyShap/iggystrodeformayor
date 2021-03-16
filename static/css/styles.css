@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Domine:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@700&display=swap');
+
 
 
 html {
@@ -16,7 +18,7 @@ body {
 
 }
 #main_container{
-	width: 55%;
+	width: 65%;
 	height: 35%;
 	/* border: 1px solid black; */
 	display: flex;
@@ -24,15 +26,19 @@ body {
 	align-items: start;
 	margin-top: 10px;
 }
-
+#coming {
+	font-size: 20px
+}
 #coming_soon{
+	padding-left: 10px;
 	width: 50%;
 	height: 100%;
-	border: 1px solid black;
-	font-family: 'Domine', serif;
+	/* border: 1px solid black; */
+	font-family: 'Sulphur Point', sans-serif;
+	font-size: 40px;
 	color: white;
-	display: flex;
-	justify-content: center;
+	padding-top: 50px;
+	text-shadow: 1px 1px #1f5aad;
 }
 
 #mhlogo {
