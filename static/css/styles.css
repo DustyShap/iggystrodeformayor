@@ -63,6 +63,9 @@ body {
 }
 
 @media screen and (max-width: 440px) {
+	#main_container{
+		padding-top: 280px;
+	}
 	#coming_soon{
 		width: 100%;
 		height: 10%;
