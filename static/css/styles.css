@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
 
 html {
 	height: 100%;
@@ -16,8 +16,8 @@ body {
 
 }
 #main_container{
-	width: 75%;
-	height: 75%;
+	width: 95%;
+	height: 100%;
 	/* border: 1px solid black; */
 	display: flex;
 	flex-direction: column;
@@ -27,51 +27,27 @@ body {
 }
 
 
-#coming_soon{
-	width: 100%;
-	height: 10%;
-	margin-bottom: 10px;
-	font-family: 'Roboto Slab', serif;
-	font-size: 40px;
-	color: #1f5aad;
-	text-shadow: 2.5px 2.5px white;
-	display: flex;
-	justify-content: center;
-}
-
-#coming_soon_text{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 100%;
-	font-family: 'Roboto Slab', serif;
-	text-shadow: 1px 1px white;
-	color: #1f5aad;
-}
 
 #main_logo{
 	margin-top: 20px;
 	width: 100%;
-	/* border: 1px solid black; */
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
 #mhlogo {
-	width: 40%;
+	width: 20%;
 }
 
 @media screen and (max-width: 440px) {
-	#main_container{
-		padding-top: 280px;
-	}
+
 	#coming_soon{
 		width: 100%;
 		height: 10%;
-		font-family: 'Roboto Slab', serif;
+		font-family: 'Roboto Condensed', sans-serif;
 		font-size: 23px;
-		color: #1f5aad;
+		color: black;
 		text-shadow: 2.5px 2.5px white;
 		display: flex;
 		justify-content: center;
@@ -81,6 +57,172 @@ body {
 		font-size: 5px;
 	}
 	#main_logo{
+		height: 20%;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		margin-top: 1px;
+		/* border: 1px solid black; */
 	}
+}
+
+.topnav {
+	/* font-family: 'Roboto', sans-serif; */
+	width: 100%;
+  overflow: hidden;
+	font-family: 'Roboto Condensed', sans-serif;
+
+
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+
+}
+
+.topnav a:hover {
+  color: black;
+	text-shadow: 2.5px 2.5px white;
+}
+
+.topnav a.active {
+  color: black;
+	text-shadow: 2.5px 2.5px white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+	a {
+		font-size: 12px;
+	}
+	.issue{
+		width: 90%;
+	}
+	#issue_text_msg{
+		font-size: 8px;
+	}
+
+
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+	#title_container{
+		font-size: 10px;
+	}
+	#issue_text_msg{
+		font-size: 8px;
+	}
+}
+
+#body_container{
+	width: 100%;
+	height: 80%;
+	/* border: 1px solid black; */
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+}
+#title_container{
+	width: 100%;
+	height: 20%;
+	/* border: 1px solid black; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 40px;
+	font-family: 'Roboto Condensed', sans-serif;
+	text-shadow: 2.5px 2.5px white;
+}
+#issue_container{
+	width: 100%;
+	height: 70%;
+	/* border: 1px solid red; */
+	display: flex;
+	justify-content: center;
+	align-items; center;
+}
+.issue{
+	width: 40%;
+	/* border: 1px solid white; */
+	background-size: 100% 100%;
+	display: flex;
+	flex-direction: column;
+}
+#issue_text img{
+	width: 20%;
+}
+#issue_text{
+	width: 100%;
+	height: 75%;
+	/* border: 1px solid black; */
+	color:black;
+	font-size: 40px;
+	font-family: 'Roboto Condensed', sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	text-shadow: 2.5px 2.5px white;
+
+}
+#issue_text a {
+	/* border: 1px solid white; */
+	width: 100%;
+	height: 30%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#issue_text_msg{
+	font-size: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	/* border: 1px solid black; */
+}
+#issue_text_msg{
+	font-size: 22px;
+}
+
+#audio_container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin: 10px;
+
+}
+audio{
+    filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);
+    width: 75%;
+    height: 25px;
 }

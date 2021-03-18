@@ -15,17 +15,28 @@
   <body>
     <div id='main_container'>
           <div class="topnav" id="myTopnav">
-            <a href="#home" class="active">Home</a>
-            <a href="/issues">Iggy's Issues</a>
-            <!-- <a href="#about">About</a> -->
+            <a href="/" >Home</a>
+            <a href="/issues" class='active'>Iggy's Issues</a>
+            <!-- <a href="/about">About</a> -->
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
             </a>
           </div>
           <div id='body_container'>
-            <div id='title_container'><a>Iggy Strode for Mayor</a></div>
-          <div id='main_logo'><img id='mhlogo' src='../static/img/mhlogo.png'></div>
+          <!-- <div id='title_container'><a>WHERE IGGY STANDS ON THE ISSUES</a></div> -->
+          <div id='issue_container'>
+            <div class='issue'>
+              <div id='issue_text'>
+                <img src="{{ url_for('static', filename='img/iggy_face.png') }}">
+                <a>Transportation</a>
+                <div id='issue_text_msg'>"Public safety should be our #1 priority all while we optimize infrastructure and invest in our future"</div>
+              <div id='audio_container'>
+              <audio controls>
+                <source src="{{ url_for('static', filename='audio/IGGYMAYORREDLIGHT.mp3')}}" />
+              </audio></div>
+              </div>
           </div>
+        </div>
         <!-- <div id='main_logo'><img id='mhlogo' src='../static/img/iggy_face.png'></div> -->
     </div>
 
