@@ -72,6 +72,7 @@ body {
 	width: 100%;
   overflow: hidden;
 	font-family: 'Roboto Condensed', sans-serif;
+	border-bottom: 1px solid white;
 
 
 }
@@ -79,11 +80,13 @@ body {
 .topnav a {
   float: left;
   display: block;
-  color: black;
+  color: #fff;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 30px;
+	-webkit-text-stroke-width: 0.5px;
+	-webkit-text-stroke-color: #1f5aad;
 
 }
 
@@ -108,16 +111,16 @@ body {
     float: right;
     display: block;
   }
-	a {
-		font-size: 12px;
-	}
+
 	.issue{
 		width: 90%;
 	}
 	#issue_text_msg{
 		font-size: 8px;
 	}
-
+	#title_container a {
+		font-size: 40px;
+	}
 
 }
 
@@ -133,8 +136,8 @@ body {
     display: block;
     text-align: left;
   }
-	#title_container{
-		font-size: 10px;
+	#title_container a {
+		font-size: 40px;
 	}
 	#issue_text_msg{
 		font-size: 8px;
@@ -144,46 +147,51 @@ body {
 #body_container{
 	width: 100%;
 	height: 80%;
-	/* border: 1px solid black; */
+	border: 1px solid black;
 	display: flex;
-	justify-content: flex-start;
+	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 }
 #title_container{
 	width: 100%;
 	height: 20%;
-	/* border: 1px solid black; */
+	color: #fff;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: 40px;
+	font-size: 120px;
 	font-family: 'Roboto Condensed', sans-serif;
-	text-shadow: 2.5px 2.5px white;
+	font-weight: 700;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: #1f5aad;
 }
-#issue_container{
+
+#issue_container {
 	width: 100%;
 	height: 70%;
-	/* border: 1px solid red; */
 	display: flex;
 	justify-content: center;
-	align-items; center;
+	align-items: center;
+	flex: 1;
+
 }
+
 .issue{
 	width: 40%;
-	/* border: 1px solid white; */
+	border: 1px solid white;
 	background-size: 100% 100%;
 	display: flex;
 	flex-direction: column;
 }
-#issue_text img{
+.issue_text img{
 	width: 20%;
 }
-#issue_text{
+.issue_text{
 	width: 100%;
 	height: 75%;
 	/* border: 1px solid black; */
-	color:black;
+	color: black;
 	font-size: 40px;
 	font-family: 'Roboto Condensed', sans-serif;
 	display: flex;
@@ -193,7 +201,7 @@ body {
 	text-shadow: 2.5px 2.5px white;
 
 }
-#issue_text a {
+.issue_text a {
 	/* border: 1px solid white; */
 	width: 100%;
 	height: 30%;
