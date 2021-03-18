@@ -17,6 +17,7 @@
           <div class="topnav" id="myTopnav">
             <a href="/" >Home</a>
             <a href="/issues" class='active'>Iggy's Issues</a>
+            <a href="https://www.meganmeierfoundation.org/donate/" target="_blank">Donate</a>
             <!-- <a href="/about">About</a> -->
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
@@ -26,13 +27,14 @@
           <!-- <div id='title_container'><a>WHERE IGGY STANDS ON THE ISSUES</a></div> -->
           <div id='issue_container'>
             <div class='issue'>
+              <img src="{{ url_for('static', filename='img/iggy_logo.png') }}">
               <div class='issue_text'>
                 <a>Transportation</a>
-                <div id='issue_text_msg'>"Public safety should be our #1 priority all while we optimize infrastructure and invest in our future"</div>
-              <!-- <div id='audio_container'> -->
-              <!-- <audio controls> -->
-                <!-- <source src="{{ url_for('static', filename='audio/IGGYMAYORREDLIGHT.mp3')}}" /> -->
-              <!-- </audio></div> -->
+                <div id='issue_text_msg'><a>"Public safety should be our #1 priority all while we optimize infrastructure and invest in our future"</a></div>
+              <div id='audio_container'>
+              <audio controls>
+                <source src="{{ url_for('static', filename='audio/IGGYMAYORREDLIGHT.mp3')}}" />
+              </audio></div>
               </div>
           </div>
         </div>
