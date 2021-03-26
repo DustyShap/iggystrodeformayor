@@ -200,6 +200,7 @@ p span{
 #title_text{
 	font-size: 100px;
 	letter-spacing: -2px;
+	margin-bottom: -10px;
 	text-align: center;
 }
 #issue_container {
@@ -301,9 +302,10 @@ audio{
     text-align: left;
   }
 	#title_container a {
-		font-size: 40px;
+		font-size: 20px;
 		letter-spacing: 0px;
 	}
+
 	#issue_text_msg a{
 		font-size: 12px;
 	}
