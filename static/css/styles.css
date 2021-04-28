@@ -1,10 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
 
-@font-face{
-	font-family: "MarlboroWide";
-	src: url("../font/Marlbow.ttf")
-}
+
 @font-face{
 	font-family: "Industry-Black";
 	src: url("../font/Industry-Black.ttf")
@@ -174,13 +171,13 @@ body {
 #issue_title_container{
 	margin-top: 10px;
 	width: 100%;
-	height: 570px;
+	height: 100vh;
 	font-size: 30px;
 	display: flex;
 	justify-content: center;
 	background-image: url('../img/iggy_point.jpeg');
 	background-position: center top;
-	/* border: 1px solid black; */
+
 }
 p span{
 	width: 100%;
@@ -193,6 +190,7 @@ p span{
 }
 .stands_font{
 	font-size: 32px;
+	color: white;
 }
 .issue_font{
 	font-size: 80px;
@@ -206,9 +204,9 @@ p span{
 #issue_container {
 	/* height: 100%; */
 	width: 100%;
-	height: auto;
+	height: 100%;
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
 	flex-direction: column;
 	/* background-color: #0d1b38; */
